@@ -1,16 +1,55 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body{
+    margin:  0px;
+    font-family: 'Roboto', sans-serif;
+}
+h6{
+    font-weight: 900;
+    font-size: 16px;
+}
+p{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+button.normal{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .2s;
+
+}
+
 
 /* HederStart*/
-
 #header{
     display: flex;
     align-items: center;
+    size: 100%;
     justify-content: space-between;
     padding: 20px 80px;
-    background-color: blanchedalmond;
-    box-shadow: 0 5px 15px rgb(0, 0, 0.06);
-
-
+    background-color: #eceae8;
+    height: 25px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
 }
 .logo{
     width: 150px;
@@ -26,5 +65,290 @@
     list-style: none;
     padding: 0 20px;
 }
+#navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active{
+color: #6c6c6d;
+}
+
+/* Home page*/
+#hero{
+    background-image: url(img/handsome-businessman-suit-glasses-cross-arms-chest-look.jpg);
+    image-rendering: auto;
+    color:rgb(185, 108, 20);
+    height: 90vh;
+
+    width: 89.4%;
+    background-position: top 25% right 0;
+    background-size: cover ;
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+   
+}
+#hero h1,
+#hero h2,
+#hero h4,
+#hero p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    
+}
+#hero h1,
+#hero p{
+    color: black;
+}
+#hero h4{
+    margin-top: 300px;
+}
+#top{
+    margin-top: 0px;
+}
+#hero button{
+    background-color: black;
+    color:rgb(247, 198, 114) ;
+    padding: 20 px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
+#feature .fe-box{
+    width: 350px;
+    text-align: center;
+    padding: 0;
+    box-shadow: 30px 30px 34px  rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 20px 54px rgba(0, 0, 0, 0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    
+    width: 350px;
+    margin-top: 20px;
+}
+#feature .fe-box h6{
+    font-size: 20px;
+    padding: 2px, 8px, 2px, 8px;
+    line-height: 2;
+    border-radius: 4px;
+    background-color: bisque;
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+#product1 h2{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+#product1 p{
+    text-align: center;
+    font-size: 40px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center
+    ;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid  #cce7d0;
+    text-align:center;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    align-items: center;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#product1 .pro .des h5{
+    font-size: 15px;
+    margin: 5px 0;
+}
+#product1 .pro .des h4{
+    margin: 5px 0;
+}
+
+#product1 .pro .cart1{
+    font-size: 15px;
+    color: black;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/banner.jpeg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: white;
+    font-size: 20px;
+}
+
+#banner h2{
+    color: white;
+    font-size: 60px;
+    padding: 10px;
+    margin: 0px;
+}
+
+#banner h2 span{
+    color: rgb(147, 4, 4);
+}
+
+#banner button:hover{
+    background-color: rgb(8, 149, 102);
+    color: white;
+}
+
+#product1 {
+    margin-top:0;
+    padding-top: 0;
+
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/ban2.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #91acd3;
+}
+
+#newsletter h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#newsletter p span{
+    color:rgb(244, 244, 69);
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+.col img {
+    height: 40px;
+}
+
+.col h4{
+    font-size: 20px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer #copyright{
+    width: 100%;
+    text-align: center;
+}
